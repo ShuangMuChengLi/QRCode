@@ -1,0 +1,25 @@
+{
+  "presets": [
+    ["latest"],
+    "stage-0"
+  ],
+  "plugins": [
+    "transform-vue-jsx",
+    "transform-decorators-legacy",
+    ["transform-runtime", {
+      "polyfill": true,
+      "regenerator": true
+    }],
+    ["component", [
+      {
+        "libraryName": "element-ui",
+        "styleLibraryName": "theme-default"
+      }
+    ]]
+  ],
+  "ignore":[
+    "vue.min.js",
+    "vue-resource.es2015.js",
+    "vue.common.min.js"
+  ]
+}
