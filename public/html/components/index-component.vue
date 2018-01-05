@@ -1,28 +1,23 @@
 <template>
     <div>
-        <qr-code text="https://www.baidu.com/"></qr-code>
-        <p>aaa</p>
+        <hyh-qrcode
+            :url="qrcode_url"
+            :size="500"
+            :middleImg="middleImg"
+        ></hyh-qrcode>
     </div>
 </template>
-
 <script>
+    import Vue from "vue";
+    import qrcode from "../demo/hyh-qrcode.vue";
+//    let qrcode = require('../demo/hyh-qrcode.vue');
     let es6Test = require('../../js/service/es6');
-    import VueQRCodeComponent from 'vue-qrcode-component'
-
     export default {
         data () {
             return {
-                msg: 'Welcome to Your Vue.js App',
-                config: {
-                    value: "https://www.baidu.com",
-                    imagePath: './examples/assets/logo.png',
-                    filter: 'color'
-                },
-                downloadButton: true
+                qrcode_url:"https://www.baidu.com/",
+                middleImg:"../../img/o_photo.png",
             }
-        },
-        watch: {
-
         },
         created:function () {
 	        es6Test();
@@ -47,7 +42,9 @@
         methods: {
 
         },
-        components: {'qr-code':VueQRCodeComponent},
+        components: {
+            'hyh-qrcode':qrcode,
+        },
     };
 </script>
 

@@ -28,6 +28,7 @@
     "node-gyp": "^3.6.2",
     "node-xlsx": "^0.7.4",
     "open": "0.0.5",
+    "qrious": "^4.0.2",
     "redis": "^2.7.1",
     "serve-favicon": "~2.3.2",
     "ueditor": "^1.2.2",

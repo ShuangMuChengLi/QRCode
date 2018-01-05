@@ -14,7 +14,7 @@ module.exports = {
     },
     resolve: {
         alias: {
-            vue: "vue/dist/vue.common.js"
+            vue: "vue/dist/vue.common.js",
         }
     },
     module: {
